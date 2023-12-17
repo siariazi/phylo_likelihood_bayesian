@@ -11,4 +11,15 @@ for i in {1..100}; do \
     sum=$(awk "BEGIN {print $sum + $size; exit}") \
 done \
 mean=$(awk "BEGIN {print $sum / 100; exit}") \
-echo "Mean Tree Size: $mean"
+echo "Mean Tree Size: $mean" \
+230709_mhChain.py: A script that has a class for theta and a function for mhChian that runs a chain. This script get the tree values from 230630_simTree.py. \
+230712_chainMixing.py: A script that takes excel files from 230709_mhChain.py, mixes them, calculated kernel density and plot the final results. \
+230725_mhChain.py: modified version of 230709_mhChain to run on clusters. \
+230827_mhChain.py: updating likelihood calculation from 230825_likelihood_test.py. The result of posterior is not better than old version. \
+230830_mhChain_1parm.py and 23030_chainMixing_1parm.py: updated version of 230827_mhChain.py and 230712_chainMixing.py for one parameter.
+
+
+
+
+
+
